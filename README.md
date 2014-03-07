@@ -27,7 +27,7 @@ setting the key you need to redeploy your app (check
 https://github.com/scottatron/dokku-rebuild). For testing use the script below,
 to get a secured url.
 ```bash
-echo "THUMBOR_SECURITY_KEY=yourkey" >> $DOKKU_ROOT/$YOUR_APP/ENV
+echo "export THUMBOR_SECURITY_KEY=yourkey" >> $DOKKU_ROOT/$YOUR_APP/ENV
 ```
 
 ## testing
