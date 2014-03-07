@@ -1,0 +1,2 @@
+libthumbor==1.0.1
+thumbor>=2.7.0

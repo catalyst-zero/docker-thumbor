@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Set redis host and port.
+sed "s/REDIS_STORAGE_SERVER_HOST/REDIS_STORAGE_SERVER_HOST = '$REDIS_HOST'/g" thumbor.conf > thumbor.conf
+sed "s/REDIS_STORAGE_SERVER_HOST/REDIS_STORAGE_SERVER_PORT = '$REDIS_PORT'/g" thumbor.conf > thumbor.conf
+
+# Start thumbor.
+thumbor
